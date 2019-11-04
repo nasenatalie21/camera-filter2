@@ -68,10 +68,10 @@ cameraTrigger.onclick = function() {
     var context = canvas.getContext('2d');  
 
     // context.globalAlpha = 1.0;
-    context.drawImage(cameraView, 0, 0, 328, 500);
+    context.drawImage(cameraView, 0, 0, cameraSensor.width, cameraSensor.height);
     image2.src = "frame.png";
     // context.globalAlpha = 0.5;
-    context.drawImage(image2, 0, 0, 328, 500);
+    context.drawImage(image2, 0, -10, cameraSensor.width, cameraSensor.height);
 
     // context.globalAlpha = 1.0;
     // context.drawImage(cameraView, 0, 0, 328, 526);
